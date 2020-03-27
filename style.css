@@ -2,24 +2,58 @@
   display: grid;
   grid-template-columns: 25% auto 25%;
   grid-template-rows: 75% auto;
+  place-content: center;
 }
 
 #left-pane {
   grid-row: 1;
   grid-column: 1;
+  place-self: center;
 }
 
 #right-pane {
   grid-row: 1;
   grid-column: 3;
+  place-self: center;
 }
 
 #image-pane {
   grid-row: 1;
   grid-column: 2;
+  width: 100%;
+  height: 100%;
 }
 
 #progress-pane {
   grid-row: 2;
   grid-column: 2;
+  place-self: center;
+  display: flex;
 }
+
+img {
+  width: inherit;
+  height: inherit;
+  transition: 0.75s;
+}
+
+.circle-fill {
+  background-color: #407511;
+}
+
+button {
+  background-color: #294e4a;
+  font-size: xx-large;
+  border-radius: 100%;
+  color: #ccc;
+  box-shadow: 3px 2px 5px 2px black;
+}
+
+.progress-circle {
+  border: 0.1em solid #407511;
+  margin: 0.5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+

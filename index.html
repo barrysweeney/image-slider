@@ -11,10 +11,16 @@
 
 <body>
     <div id="frame">
-        <div id="left-pane">Go to previous image</div>
-        <div id="image-pane">Current image</div>
-        <div id="right-pane">Go to next image</div>
-        <div id="progress-pane"> o o o o</div>
+        <div id="left-pane"><button id="prev-img-button">
+                < </button>
+        </div>
+        <div id="image-pane"><img id="current-img"></div>
+        <div id="right-pane"><button id="next-img-button">></button></div>
+        <div id="progress-pane">
+            <div class="progress-circle circle-fill"></div>
+            <div class="progress-circle"></div>
+            <div class="progress-circle"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
